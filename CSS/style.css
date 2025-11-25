@@ -11,13 +11,11 @@ body{
     font-family: 'EduNSWACTCursive', Arial, sans-serif; /* nome consistente */
     font-size: 15pt;
 }
-section{
-    border-radius: 10px;
-    padding: 15px;
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
+section {
+    display: flex; /* Usar flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Mantém os elementos empilhados */
 }
 footer{
     color: rgb(187, 35, 35);
@@ -38,14 +36,15 @@ div{
     font-size: clamp(1.1rem, 3vw, 2.5rem);
     margin-top: 20px;
 }
-#img{
+#img {
     color: rgb(187, 35, 35);
-    /* especificar cor também para a sombra inset */
-    box-shadow: 0 0 15px 5px rgb(187, 35, 35), inset 0 0 15px rgb(187,35,35);
+    box-shadow: 0 0 15px 5px rgb(187, 35, 35), inset 0 0 15px rgb(187, 35, 35);
     border-radius: 10px; 
     height: 50vh;
     max-height: 600px;
     margin-top: 20px;
+
+    display: block; /* Garante que a imagem seja tratada como bloco */
 }
 #img:hover{
     box-shadow: 0 0 12px 10px rgb(255, 85, 85), inset 0 0 25px; 
