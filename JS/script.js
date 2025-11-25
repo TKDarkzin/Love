@@ -8,7 +8,7 @@ const horaN = 16
 const minN = "00"
 const secN = "00"
 const diaN = 25
-const mesN = 9
+const mesN = "09"
 const anoN = 2025
 
 function CarregarAmor(){
@@ -25,7 +25,7 @@ function CarregarAmor(){
 
     msg.innerHTML = `Desde ${diaN}/${mesN}/${anoN} às ${horaN}:${minN}:${secN}`
 
-    let dataInicial = new Date(anoN, mesN-1, diaN, horaN, minN, secN)
+    let dataInicial = new Date(anoN, Number(mesN)-1, diaN, horaN, minN, secN)
     let now = new Date(ano, mes-1, dia, hora, min, sec)
     
     let diff = now - dataInicial
@@ -62,14 +62,14 @@ function CarregarAmor(){
         days = diaN - dia
     }
 
-    if(mes > mesN){
-        months = mesN - mes + 12
+    if(mes > Number(mesN)){
+        months = Number(mesN) - mes + 12
     }
-    else if(mes == mesN && dia > diaN){
+    else if(mes == Number(mesN) && dia > diaN){
         months = 11
     }
     else{
-        months = mesN - mes
+        months = Number(mesN) - mes
     }
 
     if(hora >= horaN){
@@ -98,6 +98,10 @@ function CarregarAmor(){
     }
     else{
         seconds = Number(secN) - sec
+    }
+
+    if(hours > 16 && hours < 24){
+        days--;
     }
 
 

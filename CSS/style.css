@@ -35,7 +35,7 @@ div{
     text-shadow: 0 0 15px rgb(187,35,35), 0 0 2.5px rgb(187,35,35);
 }
 .mensagem{
-    font-size: 1.5em;
+    font-size: clamp(1.1rem, 3vw, 2.5rem);
     margin-top: 20px;
 }
 #img{
@@ -43,7 +43,7 @@ div{
     /* especificar cor também para a sombra inset */
     box-shadow: 0 0 15px 5px rgb(187, 35, 35), inset 0 0 15px rgb(187,35,35);
     border-radius: 10px; 
-    height: 500px;
+    height: 50vh;
     max-height: 600px;
     margin-top: 20px;
 }
