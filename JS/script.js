@@ -115,7 +115,7 @@ function CarregarLoop(){
 }
 
 function loop(element){
-    element.src = `../img/Love${imgAt}.jpg`
+    element.src = `img/Love${imgAt}.jpg`
     imgAt++
     if(imgAt > imgs){
         imgAt = 1
