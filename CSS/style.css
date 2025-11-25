@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+@font-face{
+    font-family: 'EduNSWACTCursive';
+    src: url('../fonts/EduNSWACTCursive.woff2') format('woff2');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    background-color: black;
+    font-family: 'EduNSWACTCursive', Arial, sans-serif; /* nome consistente */
+    font-size: 15pt;
+}
+section{
+    border-radius: 10px;
+    padding: 15px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
+}
+footer{
+    color: rgb(187, 35, 35);
+    text-align: center;
+    font-style: italic;
+}
+div{
+    text-align: center;
+    padding: 5px;
+}
+.msg{
+    color: rgb(187, 35, 35);
+    font-family: 'EduNSWACTCursive', cursive; /* usar o mesmo nome do @font-face */
+    /* text-shadow correto: offsets blur e cor para cada sombra */
+    text-shadow: 0 0 15px rgb(187,35,35), 0 0 2.5px rgb(187,35,35);
+}
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+#img{
+    color: rgb(187, 35, 35);
+    /* especificar cor também para a sombra inset */
+    box-shadow: 0 0 15px 5px rgb(187, 35, 35), inset 0 0 15px rgb(187,35,35);
+    border-radius: 10px; 
+    height: 500px;
+    max-height: 600px;
+    margin-top: 20px;
+}
+#img:hover{
+    box-shadow: 0 0 12px 10px rgb(255, 85, 85), inset 0 0 25px; 
+    z-index: 2;
+    transition: border-color 0.2s;
+    transition: all 0.2s ease-in-out;
+}
+.msg:hover{
+    color: rgb(255, 85, 85);
+    text-shadow: 0 0 20px, 0 0 5px;
+    z-index: 2;
+    transition: border-color 0.2s;
+    transition: all 0.2s ease-in-out;
+}
